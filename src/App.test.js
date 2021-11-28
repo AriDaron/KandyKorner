@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import { kandykorner } from './Components/KandyKorner';
+
 
 test('renders learn react link', () => {
-  render(<App />);
+  render(<kandykorner />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
